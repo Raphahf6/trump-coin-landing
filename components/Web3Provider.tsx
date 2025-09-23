@@ -1,0 +1,21 @@
+// components/Web3Provider.tsx
+"use client";
+
+import React, { ReactNode } from 'react';
+import { WagmiProvider } from 'wagmi';
+import { config } from '@/lib/wagmi';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Toaster } from 'react-hot-toast'; // 1. IMPORTE O TOASTER AQUI
+
+const queryClient = new QueryClient();
+
+export function Web3Provider({ children }: { children: ReactNode }) {
+  return (
+    <WagmiProvider config={config}>
+      <QueryClientProvider client={queryClient}>
+        <Toaster /> {/* 2. ADICIONE O TOASTER AQUI */}
+        {children}
+      </QueryClientProvider>
+    </WagmiProvider>
+  );
+}
