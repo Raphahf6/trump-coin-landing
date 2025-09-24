@@ -19,11 +19,11 @@ const Tokenomics = () => {
         <section id="tokenomics" className="bg-brand-red py-16 px-4 border-t-4 border-b-4 border-brand-dark">
             {/* A classe 'text-center' aqui centraliza o título principal 'Tokenomics' */}
             <div className="container mx-auto text-center">
-                <h2 className="text-5xl uppercase text-white mb-10">
+                <h2 data-aos="fade-in"className="text-5xl uppercase text-white mb-10">
                     Tokenomics
                 </h2>
 
-                <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div data-aos="fade-up" className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                     <TokenomicCard title="Total Supply" value="1,000,000,000" />
                     <TokenomicCard title="Taxes" value="0% Buy / 0% Sell" />
                     <TokenomicCard title="Liquidity" value="Burned Forever" />

@@ -7,7 +7,7 @@ import { FaTwitter, FaTelegramPlane } from 'react-icons/fa';
 const Community = () => {
   return (
     <section id="community" className="bg-brand-dark py-20 px-4">
-      <div className="container mx-auto text-center max-w-3xl">
+      <div data-aos="fade-in" className="container mx-auto text-center max-w-3xl">
         
         <h2 className="text-5xl uppercase text-white mb-4 text-shadow-pixel-lg">
           Join The Movement
@@ -18,7 +18,7 @@ const Community = () => {
         </p>
 
         {/* Container para os botões de redes sociais */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+        <div data-aos="fade-up"className="flex flex-col sm:flex-row justify-center items-center gap-6">
           
           {/* Botão Twitter (X) */}
           <a 

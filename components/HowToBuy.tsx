@@ -11,7 +11,7 @@ import PixelButton from './PixelButton';
 const StepCard = ({ icon, step, title, description }: { icon: React.ReactNode; step: number; title: string; description: string; }) => {
   return (
     // Reutilizamos o estilo dos cards da seção Tokenomics para manter a consistência
-    <div className="bg-brand-light border-4 border-brand-dark p-6 text-center h-full flex flex-col items-center">
+    <div data-aos="fade-up" className="bg-brand-light border-4 border-brand-dark p-6 text-center h-full flex flex-col items-center">
       <div className="text-4xl text-brand-blue mb-4">{icon}</div>
       <h3 className="text-lg uppercase text-brand-red font-bold">Passo {step}: {title}</h3>
       <p className="text-base mt-2 flex-grow">{description}</p>
@@ -32,12 +32,12 @@ const HowToBuy = () => {
   return (
     <section id="how-to-buy" className="bg-brand-white py-16 px-4">
       <div className="container mx-auto text-center">
-        <h2 className="text-5xl uppercase text-brand-dark mb-12 text-shadow-pixel">
+        <h2 data-aos="fade-in" className="text-5xl uppercase text-brand-dark mb-12 text-shadow-pixel">
           How To Buy
         </h2>
 
         {/* Usamos um grid responsivo para os passos */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div data-aos="fade-up"className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           <StepCard 
             step={1}
             title="Pegue uma Carteira"

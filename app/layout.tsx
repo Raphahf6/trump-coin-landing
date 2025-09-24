@@ -4,6 +4,7 @@ import { Press_Start_2P } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header';
 import { Web3Provider } from '@/components/Web3Provider';
+import { AOSInit } from '@/components/AOSInit';
 
 
 const pressStart2P = Press_Start_2P({
@@ -25,6 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${pressStart2P.variable}`}>
+      <AOSInit /> 
       <body className="font-pixel">
         {/* ESTA É A DIV PRINCIPAL COM O BACKGROUND PIXEL ART */}
         
@@ -33,7 +35,7 @@ export default function RootLayout({
           className="min-h-screen bg-cover bg-center" // Classes Tailwind para background
           style={{ 
             backgroundImage: "url('/oval-office-bg.webp')", // Link para sua imagem
-            backgroundAttachment: 'fixed', // Opcional: faz o background ficar fixo ao rolar
+            backgroundAttachment: 'fixed', 
           }}
         >
           <Header />

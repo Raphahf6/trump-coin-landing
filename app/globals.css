@@ -8,3 +8,7 @@ body {
   color: #111827; /* brand-dark */
   font-family: theme('fontFamily.pixel');
 }
+
+html {
+  scroll-behavior: smooth;
+}
