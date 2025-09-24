@@ -51,10 +51,10 @@ const Header = () => {
       <header className="w-full bg-brand-red border-b-4 border-brand-dark p-4">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl uppercase">$TRUMP</h1>
-          <nav className="hidden md:flex items-center gap-6">
-            <a href="#about" className="hover:text-brand-gold">About</a>
+          <nav className="hidden md:flex items-center gap-4 text-sm">
             <a href="#tokenomics" className="hover:text-brand-gold">Tokenomics</a>
-            <a href="#roadmap" className="hover:text-brand-gold">Roadmap</a>
+            <a href="#how-to-buy" className="hover:text-brand-gold">How to Buy</a>
+            <a href="#roadmap" className="hover:text-brand-gold">Whitepaper</a>
           </nav>
           <PixelButton disabled={true}>Loading Wallet...</PixelButton>
         </div>
@@ -67,10 +67,10 @@ const Header = () => {
       <header className="w-full bg-brand-red border-b-4 border-brand-dark p-4">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl uppercase">$TRUMP</h1>
-          <nav className="hidden md:flex items-center gap-6">
-            <a href="#about" className="hover:text-brand-gold">About</a>
+          <nav className="hidden md:flex items-center gap-4 text-sm">
             <a href="#tokenomics" className="hover:text-brand-gold">Tokenomics</a>
-            <a href="#roadmap" className="hover:text-brand-gold">Roadmap</a>
+            <a href="#how-to-buy" className="hover:text-brand-gold">How to Buy</a>
+            <a href="#whitepaper" className="hover:text-brand-gold">Whitepaper</a>
           </nav>
           <PixelButton onClick={() => disconnect()}>
             {truncateAddress(address!)}
@@ -84,8 +84,7 @@ const Header = () => {
     <header className="w-full bg-brand-red border-b-4 border-brand-dark p-4">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl uppercase">$TRUMP</h1>
-        <nav className="hidden md:flex items-center gap-6">
-            <a href="#about" className="hover:text-brand-gold">About</a>
+        <nav className="hidden md:flex items-center gap-4 text-sm">
             <a href="#tokenomics" className="hover:text-brand-gold">Tokenomics</a>
             <a href="#roadmap" className="hover:text-brand-gold">Roadmap</a>
         </nav>
