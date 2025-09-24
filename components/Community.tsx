@@ -9,11 +9,11 @@ const Community = () => {
     <section id="community" className="bg-brand-dark py-20 px-4">
       <div data-aos="fade-in" className="container mx-auto text-center max-w-3xl">
         
-        <h2 className="text-5xl uppercase text-white mb-4 text-shadow-pixel-lg">
+        <h2 className="text-[clamp(1.9rem,2vw,4.5rem)] uppercase text-white mb-4 text-shadow-pixel-lg">
           Join The Movement
         </h2>
         
-        <p className="text-xl text-brand-light mb-10 text-shadow-pixel">
+        <p className="text-[clamp(0.9rem,2vw,4.5rem)] text-brand-light mb-10 text-shadow-pixel">
           Nossa comunidade é incrível, a melhor comunidade. Você vai adorar. Siga-nos no X e entre no nosso grupo no Telegram. Vai ser ENORME.
         </p>
 
@@ -27,7 +27,7 @@ const Community = () => {
             rel="noopener noreferrer"
             className="inline-block w-full sm:w-auto"
           >
-            <PixelButton className="w-full">
+            <PixelButton className="text-[clamp(0.7rem,0.9vw,1.5rem)]">
               <FaTwitter className="inline mr-3 text-2xl" />
               Follow on X
             </PixelButton>
@@ -40,7 +40,7 @@ const Community = () => {
             rel="noopener noreferrer"
             className="inline-block w-full sm:w-auto"
           >
-            <PixelButton className="w-full bg-brand-blue hover:bg-sky-600">
+            <PixelButton className="text-[clamp(0.6rem,0.9vw,1.5rem)] bg-brand-blue hover:bg-sky-600">
               <FaTelegramPlane className="inline mr-3 text-2xl" />
               Join Telegram
             </PixelButton>

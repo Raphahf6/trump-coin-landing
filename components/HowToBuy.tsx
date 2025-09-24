@@ -14,7 +14,7 @@ const StepCard = ({ icon, step, title, description }: { icon: React.ReactNode; s
     <div data-aos="fade-up" className="bg-brand-light border-4 border-brand-dark p-6 text-center h-full flex flex-col items-center">
       <div className="text-4xl text-brand-blue mb-4">{icon}</div>
       <h3 className="text-lg uppercase text-brand-red font-bold">Passo {step}: {title}</h3>
-      <p className="text-base mt-2 flex-grow">{description}</p>
+      <p className="text-[clamp(0.6rem,0.9vw,1.5rem)] text-base mt-2 flex-grow">{description}</p>
     </div>
   );
 };

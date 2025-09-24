@@ -8,10 +8,10 @@ const Whitepaper = () => {
         // Damos o id 'whitepaper' para que o link do Header funcione
         <section id="whitepaper" className="bg-brand-blue py-20 px-4 border-t-4 border-brand-dark">
             <div className="container mx-auto text-center max-w-3xl">
-                <h2 data-aos="fade-in" className="text-5xl uppercase text-white mb-4 text-shadow-pixel-lg">
+                <h2 data-aos="fade-in" className="text-[clamp(1.9rem,4vw,6.5rem)] uppercase text-white mb-4 text-shadow-pixel-lg">
                     Whitepaper
                 </h2>
-                <p data-aos="fade-up" className="text-xl text-brand-light mb-8 text-shadow-pixel">
+                <p data-aos="fade-up" className="text-[clamp(0.9rem,2vw,4.5rem)] text-brand-light mb-8 text-shadow-pixel">
                     Leia o documento oficial. O melhor documento, acredite. Ele contém as melhores palavras e os planos mais incríveis para tornar as criptomoedas grandes novamente. É um acordo irrecusável.
                 </p>
 

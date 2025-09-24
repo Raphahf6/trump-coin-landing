@@ -11,6 +11,7 @@ const PixelButton = ({ children, className, ...props }: ButtonProps) => {
   return (
     <button
       className={`
+        text-[clamp(0.3rem,1.5vw,1.0rem)]
         bg-brand-gold text-white font-pixel uppercase
         px-6 py-3 border-2 border-brand-dark
         shadow-pixel hover:shadow-pixel-hover

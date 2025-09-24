@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="text-center md:text-left">
           
           {/* Título e Subtítulo */}
-          <h2 className="text-5xl md:text-7xl font-bold uppercase drop-shadow-lg text-brand-white text-shadow-pixel-lg">
+          <h2 className="text-[clamp(1.5rem,4vw,5.5rem)] font-bold uppercase drop-shadow-lg text-brand-white text-shadow-pixel-lg">
             Make Crypto Great Again
           </h2>
           <p className="mt-4 text-xl text-brand-white text-shadow-pixel">
