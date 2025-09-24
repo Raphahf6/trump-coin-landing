@@ -17,7 +17,7 @@ const Hero = () => {
             Make Crypto Great Again
           </h2>
           <p className="mt-4 text-xl text-brand-white text-shadow-pixel">
-            The best coin, believe me. Everyone agrees. It's tremendous.
+            The best coin, believe me. Everyone agrees. Its tremendous.
           </p>
 
           {/* O container da imagem deve estar DENTRO da coluna 1 */}
