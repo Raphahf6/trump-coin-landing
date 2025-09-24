@@ -40,7 +40,7 @@ const Header = () => {
     const initialConnectStatus = connectStatus;
     connect({ connector: connectors[0] });
    if (connectStatus == 'error') {
-     toast.error('MetaMask not found. Please install the extension!');
+     toast.error('MetaMask não encontrada, verifique se possui a extenção instalada');
    }
   };
 
