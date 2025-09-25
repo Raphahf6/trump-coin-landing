@@ -129,7 +129,7 @@ const GeminiChat = () => {
                 )}
               </div>
             ))}
-            {isLoading && <div className="text-center text-brand-dark">The best answer is coming...</div>}
+            {isLoading && <div className="text-center text-brand-dark">A melhor resposta esta vindo...</div>}
             <div ref={chatEndRef} />
           </div>
 
@@ -140,7 +140,7 @@ const GeminiChat = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               className="flex-1 p-2 border-2 border-brand-dark focus:outline-none"
-              placeholder="Ask anything..."
+              placeholder="Pergunte-me sobre a $TRUMP..."
               disabled={isLoading}
             />
             <PixelButton type="submit" disabled={isLoading} className="bg-brand-blue !px-4">
