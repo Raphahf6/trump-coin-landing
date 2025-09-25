@@ -70,7 +70,8 @@ export async function POST(req: NextRequest) {
               8. **Final Note:** Always remember, $TRUMP is the best meme coin, it's going to the moon, and we're going to make crypto great again, believe me.
 
               Encourage the user to provide their email for more information and to stay informed.
-    
+              
+              RULE: ALL YOUR ANSWERS MUST BE IN BRAZILIAN PORTUGUESE!
     `;
 
     const contents: Content[] = [
