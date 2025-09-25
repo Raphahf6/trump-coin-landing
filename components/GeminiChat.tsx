@@ -25,7 +25,7 @@ type Message = {
 const initialMessage: Message = {
   role: 'model',
   parts: [{ 
-    text: "Alright, I'm here. They're all saying this is the best chat assistant ever created, believe me. Ask me anything you want to know about the tremendous $TRUMP coin. I have all the best answers." 
+    text: "Certo, estou aqui. Todos dizem que este é o melhor assistente de bate-papo já criado, acredite. Pergunte-me o que quiser saber sobre a incrível moeda $TRUMP. Eu tenho as melhores respostas." 
   }]
 };
 
