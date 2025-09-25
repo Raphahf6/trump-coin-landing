@@ -5,10 +5,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import PixelButton from './PixelButton';
 import { FaCommentDots, FaTimes, FaPaperPlane } from 'react-icons/fa';
 
-// Tipos para os novos dados estruturados (texto + botões)
+// ATUALIZADO: O tipo de ação agora pode ser 'scroll' ou 'link'
 type ButtonAction = {
   label: string;
-  action_type: 'scroll';
+  action_type: 'scroll' | 'link';
   value: string;
 };
 
@@ -22,7 +22,6 @@ type Message = {
   parts: MessagePart[];
 };
 
-// Mensagem inicial que o usuário vê ao abrir o chat
 const initialMessage: Message = {
   role: 'model',
   parts: [{ 
@@ -37,20 +36,21 @@ const GeminiChat = () => {
   const [isLoading, setIsLoading] = useState(false);
   const chatEndRef = useRef<HTMLDivElement>(null);
 
-  // Efeito para rolar para a mensagem mais recente
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [history]);
 
-  // Função que lida com o clique nos botões gerados pela IA
+  // ATUALIZADO: A função agora lida com os dois tipos de ação
   const handleButtonClick = (action: ButtonAction) => {
     if (action.action_type === 'scroll') {
       document.querySelector(action.value)?.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false); // Fecha o chat para o usuário ver a rolagem
+      setIsOpen(false);
+    } else if (action.action_type === 'link') {
+      window.open(action.value, '_blank', 'noopener,noreferrer');
+      setIsOpen(false);
     }
   };
 
-  // Função que envia a mensagem do usuário para o backend
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
