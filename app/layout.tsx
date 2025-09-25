@@ -5,6 +5,7 @@ import './globals.css'
 import Header from '@/components/Header';
 import { Web3Provider } from '@/components/Web3Provider';
 import { AOSInit } from '@/components/AOSInit';
+import GeminiChat from '@/components/GeminiChat';
 
 
 const pressStart2P = Press_Start_2P({
@@ -34,7 +35,7 @@ export default function RootLayout({
         <div
           className="min-h-screen bg-cover bg-center" // Classes Tailwind para background
           style={{ 
-            backgroundImage: "url('/oval-office-bg.webp')", // Link para sua imagem
+            backgroundImage: "url('/oval-office-bg.webp')", // Link para imagem
             backgroundAttachment: 'fixed', 
           }}
         >
@@ -43,6 +44,7 @@ export default function RootLayout({
         </div>
         </Web3Provider>
         {/* Fim da div do background */}
+        <GeminiChat />
       </body>
     </html>
   )

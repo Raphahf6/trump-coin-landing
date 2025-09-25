@@ -4,8 +4,7 @@
 @tailwind utilities;
 
 body {
-  /* background-color: #F3F4F6; <--- COMENTE OU REMOVA ESTA LINHA */
-  color: #111827; /* brand-dark */
+  color: #111827;
   font-family: theme('fontFamily.pixel');
   
 }
